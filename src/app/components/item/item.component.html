@@ -1,0 +1,18 @@
+<div class="row" [ngClass]="setClasses()">
+    <div class="servicio">
+        <input type="checkbox" title="completed" [checked]="item.completed" (change)="onToggle(item)"> 
+        {{item.servicio}}
+    </div>
+    <div class="monto">
+        {{item.monto | currency}}
+    </div>
+    <div class="fechaVto">
+        {{item.fechaVto}}
+    </div>
+    <div class="chg">
+        <button routerLink="/chg/{{item.id}}">Cambiar</button>
+    </div>
+    <div class="delete">
+        <button (click)="onDelete(item)">Eliminar</button>
+    </div>
+</div>

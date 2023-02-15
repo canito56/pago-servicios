@@ -1,0 +1,21 @@
+<form action="" (ngSubmit)="onSubmit()">
+    <h2>Cambiar servicio</h2>
+
+    <div>
+        <label for="">Nombre del Servicio</label>
+        <input type="text" title="servicio" name="servicio" id="" [(ngModel)]="item.servicio">
+    </div>
+
+    <div>
+        <label for="">Monto</label>
+        <input type="text" title="monto" name="monto" id="" [(ngModel)]="item.monto">
+    </div>
+
+    <div>
+        <label for="">Fecha Vto.</label>
+        <input type="text" title="fechavto" name="fechavto" id="" [(ngModel)]="item.fechaVto">
+    </div>
+
+    <input type="submit" id="cambiar" value="Cambiar">
+
+</form>

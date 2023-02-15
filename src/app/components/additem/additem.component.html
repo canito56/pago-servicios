@@ -1,0 +1,21 @@
+<form action="" (ngSubmit)="onSubmit()">
+    <h2>Regitrar un nuevo servicio</h2>
+
+    <div>
+        <label for="">Servicio</label>
+        <input type="text" title="servicio" name="servicio" id="" [(ngModel)]="servicio">
+    </div>
+
+    <div>
+        <label for="">Monto</label>
+        <input type="text" title="monto" name="monto" id="" [(ngModel)]="monto">
+    </div>
+
+    <div>
+        <label for="">Fecha Vto.</label>
+        <input type="text" title="fechaVto" name="fechaVto" id="" [(ngModel)]="fechaVto">
+    </div>
+
+    <input type="submit" id="crear" value="Crear">
+
+</form>
